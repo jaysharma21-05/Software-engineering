@@ -285,5 +285,301 @@ git push origin feature-branch
 **Your Journey:** Beginner → Intermediate → Advanced Developer → Tech Lead!
 
 **Last Updated:** January 2026
+
+---
+
+## 🎯 SDLC Kya Hai? (Easy Definition)
+
+**SDLC** ek aisa system ya "rasta" hai jise follow karke badi-badi companies high-quality software banati hain.
+
+Aap ise ek **Ghar banane ke process** jaisa samajh sakte hain:
+
+- Pehle map banta hai (Planning).
+- Phir material aata hai (Requirement).
+- Phir mistry kaam shuru karta hai (Development).
+- Aur last mein check kiya jata hai ki sab sahi hai ya nahi (Testing).
+
+---
+
+## 🛠️ SDLC ke 7 Stages (Step-by-Step)
+
+### 1. Planning and Analysis (Planning aur Sochna)
+
+Sabse pehle yeh dekha jata hai ki: **"Banana kya hai aur kyun banana hai?"**
+
+- Kitna paisa lagega? (Budget)
+- Kitne log chahiye? (Resources)
+- Kya yeh software banana possible hai? (Feasibility)
+
+### 2. Defining Requirements (Zaroorat ko Samjhna)
+
+Yahan banti hai **SRS (Software Requirement Specification)** document. Yeh ek tarah ki "Agreement" ya "Bible" hoti hai jisme likha hota hai ki software mein kaun-kaun se features honge.
+
+### 3. Designing (Naksha Banana)
+
+Code likhne se pehle uska design banta hai.
+
+- **HLD (High-Level Design):** Upar-upar ka structure (Database, Architecture).
+- **LLD (Low-Level Design):** Gehrai mein logic (Kaunsa button kya karega).
+
+### 4. Development (Asli Coding)
+
+Yeh sabse lamba phase hai. Yahan developers (Frontend aur Backend) milkar asli code likhte hain. Tools jaise VS Code aur Git ka use hota hai.
+
+### 5. Testing (Galti Dhundna)
+
+Jab software ban jata hai, toh **QA (Quality Assurance)** team use check karti hai.
+
+- Kya software crash ho raha hai?
+- Kya saare buttons kaam kar rahe hain?
+- **Target:** Software ko "Bug-free" banana.
+
+### 6. Deployment (Market mein Launch)
+
+Testing ke baad software ko live kar diya jata hai taaki asli users ise use kar saken. Iske liye aaj kal **DevOps** aur **CI/CD** pipelines ka use hota hai.
+
+### 7. Maintenance (Dekh-bhaal)
+
+Software launch hone ke baad kaam khatam nahi hota.
+
+- Users ko koi problem aayi toh use theek karna (Bug fixing).
+- Naye features add karna.
+- Software ko update rakhta.
+
+---
+
+## 📊 Factors of Software Quality
+
+### 1. **Portability:** 
+A software is claimed to be transportable, if it may be simply created to figure in several package environments, in several machines, with alternative code products, etc.
+
+### 2. **Usability:** 
+A software has smart usability if completely different classes of users (i.e. knowledgeable and novice users) will simply invoke the functions of the products.
+
+### 3. **Reusability:** 
+A software has smart reusability if completely different modules of the products will simply be reused to develop new products.
+
+### 4. **Correctness:** 
+Software is correct if completely different needs as laid out in the SRS document are properly enforced.
+
+### 5. **Maintainability:** 
+A software is reparable, if errors may be simply corrected as and once they show up, new functions may be simply added to the products, and therefore the functionalities of the products may be simply changed, etc
+
+### 6. **Reliability:** 
+Software is more reliable if it has fewer failures. Since software engineers do not deliberately plan for their software to fail, reliability depends on the number and type of mistakes they make. Designers can improve reliability by ensuring the software is easy to implement and change, by testing it thoroughly, and also by ensuring that if failures occur, the system can handle them or can recover easily.
+
+### 7. **Efficiency:** 
+The more efficient software is, the less it uses of CPU-time, memory, disk space, network bandwidth, and other resources. This is important to customers in order to reduce their costs of running the software.
+
+---
+
+## 🎗️ Boehm's Model ka Structure
+
+Boehm ne software quality ko teen bade levels mein baanta hai:
+
+### 1. High-Level Characteristics (Upar ka Level)
+
+Ye dekhta hai ki software overall kaisa hai. Isme 3 main sawal hote hain:
+
+- **As-is utility:** Kya software abhi sahi kaam kar raha hai? (Reliability, Efficiency).
+- **Maintainability:** Kya ise future mein change ya theek karna asaan hai?
+- **Portability:** Kya ise doosre hardware ya OS par chalaya ja sakta hai?
+
+### 2. Intermediate-Level Characteristics (Beech ka Level)
+
+Ye 7 quality factors hain jo asaliyat mein software ki quality batate hain:
+
+1. **Portability:** Doosre environment mein chalne ki kabliyat.
+2. **Reliability:** Bina galti (errors) ke kaam karna.
+3. **Efficiency:** Resources (RAM/CPU) ka sahi use karna.
+4. **Usability:** User ke liye chalane mein asaan hona.
+5. **Testability:** Kya code ko test karna asaan hai?
+6. **Understandability:** Kya koi naya developer code dekh kar samajh sakta hai?
+7. **Modifiability:** Kya code mein naye features add karna asaan hai?
+
+### 3. Primitive Characteristics (Sabse Neeche ka Level)
+
+Ye sabse chote units hain jinhe hum asaliyat mein **measure** kar sakte hain. Jaise:
+
+- **Device Independence** (Portability ke liye).
+- **Self-Descriptiveness** (Understandability ke liye).
+- **Completeness** (Reliability ke liye).
+
+---
+
+# 🌊 Waterfall Model 
+
+software engineering ka **sabse purana aur basic SDLC model** hai. Ise **"Linear-Sequential Life Cycle Model"** bhi kehte hain kyunki isme har stage ek seedhi line mein chalti hai.
+
+Jaise ek asali waterfall (jharna) hamesha upar se niche girta hai aur wapas upar nahi ja sakta, waise hi is model mein aap ek stage khatam karke hi doosre par ja sakte hain, aur piche mudna bahut mushkil hota hai.
+
+### 🌊 Waterfall Model ke Stages
+
+Waterfall model mein 5-6 fixed stages hote hain:
+
+1. **Requirement Analysis:** Sabse pehle client se saari requirements ek hi baar mein le li jati hain. Iske baad requirements change nahi hoti.
+2. **System Design:** Software ka blueprint aur architecture taiyar kiya jata hai.
+3. **Implementation (Coding):** Asli coding shuru hoti hai. Isme bade project ko chote units mein baanta jata hai.
+4. **Testing:** Jab poora code taiyar ho jata hai, tab testing team bugs dhundti hai.
+5. **Deployment:** Software ko market ya client ko deliver kar diya jata hai.
+6. **Maintenance:** Launch ke baad agar koi galti nikle ya update chahiye ho, toh wo yahan hota hai.
+
+### ✅ Advantages (Fayde)
+
+- **Simple & Easy:** Isse samajhna aur manage karna bahut asaan hai.
+- **Disciplined:** Har stage ka ek start aur end point hota hai, isliye progress track karna easy hai.
+- **Document-Driven:** Isme har phase ka documentation bahut strong hota hai.
+- **Small Projects ke liye Best:** Agar requirements ekdum clear hain aur change nahi hone wali, toh ye best hai.
+- **Sequential Processing:** Each phase is completed one at a time, ensuring an organized development flow.
+
+### ❌ Disadvantages (Nuksaan)
+
+- **No Going Back:** Agar aap Testing phase mein hain aur aapko pata chla ki Design mein galti thi, toh piche jana bahut mehenga aur mushkil padta hai.
+- **High Risk:** Software ka "Working Version" ekdum last mein dikhta hai. Agar client ko end product pasand nahi aaya, toh poora paisa aur time waste.
+- **Not for Big Projects:** Aaj kal ke complex apps (jaise Instagram/WhatsApp) ke liye ye bilkul bekar hai kyunki wahan requirements roz badalti hain.
+- **Late Testing:** Testing sabse aakhir mein hoti hai, jisse bugs ko fix karna mushkil ho jata hai.
+
+### ⚖️ Kab use karein? (Best Use Case)
+
+Waterfall tabhi use karein jab:
+
+1. Project chota ho.
+2. Requirements ekdum crystal clear hon.
+3. Technology purani aur stable ho.
+4. Paisa aur resources ki koi kami na ho.
+
+---
+
+# 🔄 Prototyping Model 
+
+ek aisa software development tareeka hai jisme asli software banane se pehle uska ek **"Dummy" ya "Draft" version** taiyar kiya jata hai. Ise hum **Prototype** kehte hain.
+
+Yeh model tab sabse zyada kaam aata hai jab client ko khud nahi pata hota ki use exact kya chahiye. Iska main funda hai: _"Pehle ek sample banao, client ko dikhao, aur feedback ke hisaab se asli software banao."_
+
+### 🔄 Prototyping Model ke Stages
+
+Yeh model ek cycle ki tarah kaam karta hai:
+
+1. **Basic Requirement Gathering:** Client se upar-upar ki zarooratein poochna.
+2. **Quick Design:** Ek rough design taiyar karna jo sirf dikhne mein software jaisa ho.
+3. **Build Prototype:** Ek chota working model banana (isme saare features nahi hote, sirf main UI hota hai).
+4. **Customer Evaluation:** Client ko prototype dikhana aur unka feedback lena.
+5. **Refining Prototype:** Agar client ko kuch pasand nahi aaya, toh prototype ko change karna (Yeh step tab tak chalta hai jab tak client khush na ho jaye).
+6. **Engineer Product:** Jab prototype final ho jaye, tab asli coding aur testing shuru hoti hai.
+
+### ✨ Types of Prototyping
+
+- **Throwaway Prototyping:** Prototype ko sirf requirements samajhne ke liye banaya jata hai aur baad mein ise phenk (discard) diya jata hai. Asli software zero se banta hai.
+- **Evolutionary Prototyping:** Prototype ko hi dheere-dheere develop karke asli software mein badal diya jata hai.
+- **Incremental Prototyping:** Alag-alag features ke chote-chote prototypes banaye jate hain aur baad mein unhe jod diya jata hai.
+
+### ✅ Advantages (Fayde)
+
+- **User Involvement:** Client shuru se hi project ka hissa hota hai, isliye galat software banne ka chance kam ho jata hai.
+- **Early Error Detection:** Design ki galtiyan coding shuru hone se pehle hi mil jati hain.
+- **Missing Functionality:** Naye features jo shuru mein yaad nahi aaye, wo prototype dekh kar yaad aa jate hain.
+
+### ❌ Disadvantages (Nuksaan)
+
+- **Expensive & Time Consuming:** Ek extra "Dummy" software banane mein paisa aur waqt dono lagte hain.
+- **Confusion:** Kabhi-kabhi client ko lagta hai ki prototype hi asli software hai aur wo jaldi delivery mangne lagta hai.
+- **Too much Change:** Baar-baar feedback lene se project kabhi khatam hi nahi hota (Scope creep).
+
+### ⚖️ Kab use karein?
+
+- Jab **User Interface (UI)** bahut important ho.
+- Jab requirements clear na hon.
+- Jab project complex ho aur risk zyada ho.
+
+---
+
+# 🐨 Incremental Model 
+
+ek aisa software development process hai jahan poore software ko ek sath banane ke bajaye, use chhote-chhote tukdon ya **"Increments"** mein banaya aur deliver kiya jata hai.
+
+Har naye increment mein pichle version ke features toh hote hi hain, saath hi kuch naye features bhi add kar diye jaate hain.
+
+### ⚙️ Incremental Model Kaise Kaam Karta Hai?
+
+Is model mein poore project ko alag-alag modules mein baant diya jata hai. Har module in stages se guzarta hai:
+
+1. **Requirements Analysis**
+2. **Design**
+3. **Coding**
+4. **Testing**
+
+Maal lijiye aap ek **E-commerce app** bana rahe hain:
+
+- **Increment 1:** Sirf Login aur Product display ka feature.
+- **Increment 2:** Cart aur Payment ka feature add kiya gaya.
+- **Increment 3:** Rating aur Reviews ka feature add kiya gaya.
+
+### ✅ Advantages (Fayde)
+
+- **Early Delivery:** Poore software ka wait nahi karna padta, basic features jaldi mil jaate hain.
+- **Risk Management:** Agar kisi ek increment mein galti ho, toh use theek karna asaan hota hai.
+- **Flexible:** Naye requirements ko beech mein add karna Waterfall ke muqable asaan hai.
+- **Customer Feedback:** Client har increment ke baad feedback de sakta hai.
+
+### ❌ Disadvantages (Nuksaan)
+
+- **Planning & Design:** Isme shuruat mein bohot acchi planning chahiye hoti hai taaki naye increments purane wale ke saath sahi se "fit" ho sakein.
+- **Total Cost:** Kabhi-kabhi baar-baar testing aur integration karne ki wajah se poora kharcha Waterfall se zyada ho jata hai.
+- **System Architecture:** Agar pehle se dhang ka architecture nahi banaya, toh baad mein naye features add karte waqt software "tut" sakta hai.
+
+### ⚖️ Incremental vs Waterfall
+
+| **Feature** | **Waterfall** | **Incremental** |
+|---|---|---|
+| **Delivery** | Ek hi baar mein aakhir mein | Chhote-chhote parts mein |
+| **Flexibility** | Bilkul nahi (Rigid) | Kaafi hadd tak flexible |
+| **Risk** | High (Last mein pata chalta hai) | Low (Step-by-step testing) |
+| **Requirements** | Shuru mein hi fix honi chahiye | Dheere-dheere evolve ho sakti hain |
+
+---
+
+# 🌀 Spiral Model
+
+software engineering ka sabse advanced aur important models mein se ek hai. Ise **Barry Boehm** ne 1986 mein propose kiya tha.
+
+Iska sabse bada feature hai **Risk Management**. Agar aapka project bahut bada hai aur usme fail hone ka dar (risk) zyada hai, toh Spiral Model aankh band karke use kiya jata hai.
+
+### 🌀 Spiral Model Kaise Kaam Karta Hai?
+
+Yeh model ek **Spring (Spiral)** ki tarah dikhta hai. Isme aap ek hi raaste par baar-baar ghoomte hain, lekin har baar aapka software pehle se bada aur behtar hota jata hai.
+
+Iske 4 main hisse (Quadrants) hote hain:
+
+1. **Objective Setting (Planning):** Yahan hum decide karte hain ki is "cycle" mein humein kya achieve karna hai aur kitna kharcha aayega.
+2. **Risk Analysis (Sabse Important):** Yahan team check karti hai ki project mein kya-kya galtiyan ho sakti hain ya kahan paisa doob sakta hai. Is phase mein ek **Prototype** bhi banaya jata hai.
+3. **Engineering (Development & Testing):** Yahan asli coding hoti hai aur software ka wo version test kiya jata hai.
+4. **Evaluation (Review):** Client software ko dekhta hai aur feedback deta hai. Iske baad tay hota hai ki agla "Spiral" ya cycle shuru karna hai ya nahi.
+
+### ✅ Advantages (Fayde)
+
+- **Risk Handling:** Isme har phase mein risk check hota hai, isliye project fail hone ke chances bahut kam hote hain.
+- **Large Projects:** Duniya ke sabse bade aur complex softwares isi model se bante hain.
+- **Flexibility:** Agar client ko beech mein koi naya feature yaad aa jaye, toh use agle spiral mein add kiya ja sakta hai.
+- **Customer Satisfaction:** Client har cycle ke baad product dekh sakta hai, isliye trust bana rehta hai.
+
+### ❌ Disadvantages (Nuksaan)
+
+- **Expensive:** Yeh model bahut mehenga hai kyunki isme expert log chahiye hote hain jo risk ko pehchan saken.
+- **Time Consuming:** Baar-baar wahi phases repeat karne se project khatam hone mein bahut waqt lag sakta hai.
+- **Not for Small Projects:** Chote projects ke liye yeh "hathi palne" jaisa hai—faltu ka kharcha aur mehnat.
+- **Complexity:** Iska structure samajhna aur manage karna mushkil hota hai.
+
+### ⚖️ Spiral vs Waterfall
+
+| **Feature** | **Waterfall** | **Spiral** |
+|---|---|---|
+| **Risk** | Isme risk ka koi khaas option nahi hai. | Poora model Risk management par tika hai. |
+| **Changes** | Beech mein change karna namumkin hai. | Kabhi bhi changes add kar sakte hain. |
+| **Project Size** | Chote aur simple projects ke liye. | Bahut bade aur complex projects ke liye. |
+| **Cost** | Sasta (Low cost). | Bahut mehenga (High cost). |
+
+### 💪 Summary in Short (Hinglish)
+
+Spiral Model ka matlab hai: **"Kaam karo, Risk check karo, Client ko dikhao, aur phir wahi repeat karo."** Yeh model tab use hota hai jab galti ki gunjayish zero ho aur budget ki koi chinta na ho.
 **For All Programming Languages & Platforms**
 **Created with ❤️ for Easy Learning**
