@@ -583,3 +583,149 @@ Iske 4 main hisse (Quadrants) hote hain:
 Spiral Model ka matlab hai: **"Kaam karo, Risk check karo, Client ko dikhao, aur phir wahi repeat karo."** Yeh model tab use hota hai jab galti ki gunjayish zero ho aur budget ki koi chinta na ho.
 **For All Programming Languages & Platforms**
 **Created with ❤️ for Easy Learning**
+
+
+🚀 RAD (Rapid Application Development) Model
+=============================================
+
+### **1. Asli Definition (Kya hai ye?)**
+
+RAD ek **incremental** software development model hai jiska main focus **speed** aur **jaldi delivery** par hota hai.
+
+- Ismein system ko chhote-chhote **modules** mein divide karke parallel mein develop kiya jata hai.
+    
+- Iska timeframe bahut short hota hai: **60 se 90 days** ke andar working software ready karna hota hai.
+    
+- Ye model **Prototypes** (sample models) aur user feedback par zyada depend karta hai.
+
+---
+
+### **2. RAD ke 4 Phases (Step-by-Step)**
+
+1. **Requirements Planning:** Yahan developers aur users milkar decide karte hain ki software se kya chahiye. Ek basic project plan aur requirements ki list taiyar ki jati hai.
+    
+2. **User Design:** Ye phase sabse important hai. Developers **prototypes** banate hain aur users unhe check karke feedback dete hain. Jab tak design perfect na ho jaye, changes hote rehte hain.
+    
+3. **Construction:** Yahan actual coding hoti hai. Powerful tools aur reusable components use karke features ko jaldi-se-jaldi build aur test kiya jata hai.
+    
+4. **Cutover:** Ye final step hai. Saare modules ko integrate karke full system ki testing hoti hai aur software user ko hand-over kar diya jata hai.
+
+---
+
+### **3. Advantages vs. Disadvantages**
+
+| **Advantages (Fayde)** | **Disadvantages (Nuksan)** |
+|---|---|
+| **Super Fast:** Reusable parts ki wajah se kaam jaldi hota hai. | **Highly Skilled Team:** Iske liye expert developers chahiye jo advanced tools chala sakein. |
+| **User Feedback:** User ko shuru se hi prototypes dikhte hain, toh baad mein koi "surprise" nahi hota. | **User Involvement:** Agar user time nahi de raha, toh ye model fail ho jayega. |
+| **Flexible:** Bich mein requirements change karna easy hai. | **Modularity:** Sirf unhi projects ke liye hai jise chhote hisso mein toda ja sake. |
+| **Better Quality:** Tools aur early testing se bugs jaldi pakde jate hain. | **Costly:** Automation tools aur expert staff mehenga pad sakta hai. |
+
+---
+
+### **4. Kab use karein? (When to use?)**
+
+- Jab software **bahut jaldi (urgent)** deliver karna ho.
+    
+- Jab requirements ekdum **clear** ho aur change na hone wali ho.
+    
+- Jab system ko **modules** mein divide karna possible ho.
+    
+- Jab user har step par **feedback** dene ke liye ready ho.
+
+---
+
+## 🔧 Cohesion: Module ke "Andar" ke Rishte
+
+### **Cohesion Kya Hota Hai?**
+
+Cohesion = "Module ke andar wali cheeze ek hi kaam ke liye mil-ke kaam kar rahi hain ya random-random kaam kar rahi hain?"
+
+**Analogy: Restaurant ka Staff (Kitchen Team)**
+
+- **High Cohesion (Best):** Socho kitchen mein ek "Chef" hai jo sirf pasta banane ka kaam karta hai. Uske saare action (boiling, saucing, plating) sirf pasta banane ke liye hain. Ye **Functional Cohesion** hai—focus ekdum clear hai.
+    
+- **Low Cohesion (Worst):** Ab socho ek aisa staff member hai jo pasta bhi bana raha hai, bahar jhadu bhi laga raha hai, aur manager ka phone bhi utha raha hai. Wo banda confuse rahega aur kaam kharab hoga. Ye **Coincidental Cohesion** hai—sab mix-up hai.
+
+### **Types of Cohesion (Strongest to Weakest):**
+
+1. **Functional Cohesion:** Sabhi elements ek hi logical function perform karte hain (Best)
+2. **Sequential Cohesion:** Output of one element input of another ho
+3. **Communicational Cohesion:** Elements same data use karte hain
+4. **Procedural Cohesion:** Elements same procedure follow karte hain
+5. **Temporal Cohesion:** Elements same time par execute hote hain
+6. **Logical Cohesion:** Similar type ke operations
+7. **Coincidental Cohesion:** Random cheezein ek module mein (Worst)
+
+---
+
+## 🔗 Coupling: Do Modules ke "Beech" ka Rishta
+
+### **Coupling Kya Hota Hai?**
+
+Coupling = Do modules ek dusre par kitna dependent hain?
+
+**Analogy: Restaurant aur Delivery App (Zomato/Swiggy)**
+
+- **Low Coupling (Best):** Restaurant aur Delivery Boy ke beech ka rishta "Low Coupling" hona chahiye. Delivery boy ko sirf Order ID aur Packet se matlab hai. Use ye janne ki zaroorat nahi ki kitchen mein gas kaunsa hai ya Chef ne kya pehna hai. Sirf **Data (Order)** pass hua—kaam khatam (**Data Coupling**).
+    
+- **High Coupling (Worst):** Ab socho agar Delivery boy ko kitchen ke andar jaake khud packing karni pade, ya Restaurant ke register mein entries karni pade. Agar Restaurant apna register badal de, toh Delivery boy ko bhi apna kaam badalna padega. Dono ek dusre mein ghuse huye hain (**Content Coupling**).
+
+### **Types of Coupling (Strongest to Weakest):**
+
+1. **Content Coupling:** Ek module directly doosre module ke internal data modify kare (Worst)
+2. **Common Coupling:** Dono modules same global variable use karte hain
+3. **External Coupling:** Dono ek hi external library use karte hain
+4. **Control Coupling:** Ek module doosre ke control flow ko affect kare
+5. **Stamp Coupling:** Ek complex data structure pass ho lekin sirf part use ho
+6. **Data Coupling:** Sirf simple data elements pass ho (Best)
+
+---
+
+## 📱 Agile Model - Easy Explanation (Building a House)
+
+### **Waterfall vs Agile (Ek Analogy)**
+
+- **Waterfall (Traditional):** You spend 6 months designing every detail of a 5-bedroom mansion. You build the whole thing at once. On move-in day, you realize you actually hate the kitchen layout and didn't need 5 bedrooms. Fixing it now requires tearing down walls—it's expensive and frustrating.
+    
+- **Agile:** You build a high-quality, 1-bedroom "tiny home" first. You move in after 1 month. You realize you need a bigger porch more than a second bathroom. You add the porch in the next month. You evolve the house based on how you actually live in it.
+
+---
+
+### **🔄 The Agile Lifecycle (The Loop)**
+
+Agile isn't a straight line; it's a loop. Instead of one big "Launch," you have many small "Releases."
+
+#### **The Core Process (The "Loop")**
+
+1. **Requirements:** What does the user need most _right now_?
+    
+2. **Plan:** What can we realistically finish in 2 weeks?
+    
+3. **Develop:** Code the specific feature.
+    
+4. **Test:** Check for bugs immediately.
+    
+5. **Deploy:** Put it in the user's hands.
+    
+6. **Review:** What did we learn? (Start again at Step 1).
+
+### **Key Principles of Agile**
+
+- **Individuals and Interactions** > Processes and Tools
+- **Working Software** > Comprehensive Documentation
+- **Customer Collaboration** > Contract Negotiation
+- **Responding to Change** > Following a Plan
+
+### **Common Agile Frameworks**
+
+1. **Scrum:** 2-week sprints, daily standups, sprint reviews
+2. **Kanban:** Visual board, continuous flow, work-in-progress limits
+3. **Extreme Programming (XP):** Pair programming, continuous integration, test-driven development
+4. **Lean:** Eliminate waste, maximize value delivery
+
+---
+
+**For All Programming Languages & Platforms**
+
+**Created with ❤️ for Easy Learning**
